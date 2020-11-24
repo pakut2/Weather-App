@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <section>
+      <div class="search">
+        <h1>Check weather for your city</h1>
+        <div class="search-header">
+          <div class="form">
+            <input class="search-bar" type="text" autocomplete="off" required />
+            <label for="name" class="label-name">
+              <span class="content-name">Name of the city</span></label
+            >
+          </div>
+          <div class="clear">&#10006;</div>
+        </div>
+        <button class="search-button">Search</button>
+      </div>
+      <div class="container">
+        <div class="header">
+          <span class="showing-data">Showing data for:</span> &nbsp;<span
+            id="location"
+            >Undefined location</span
+          >
+          <div class="temp-icon">
+            <img src="./Assets/dog.png" class="icon" />
+          </div>
+        </div>
+
+        <div class="info">
+          <div class="data">
+            Temperature: <span id="temp">???</span>
+            <span class="unit">&#8451;</span>
+          </div>
+          <div class="data">
+            Percieved Temperature: <span id="perc-temp">???</span>
+            <span class="perc-unit">&#8451;</span>
+          </div>
+          <div class="data">
+            Pressure: <span id="press">???</span> <span>hPa</span>
+          </div>
+          <div class="data">
+            Humidity: <span id="humid">???</span> <span>%</span>
+          </div>
+
+          <div class="units">
+            <span>Choose Temperature Units:</span>
+            <div class="buttons">
+              <button class="metric">Metric</button>
+              <button class="imperial">Imperial</button>
+            </div>
+          </div>
+
+          <div class="data-source">
+            <a href="https://openweathermap.org/" target="blank">Data Source</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
