@@ -1,1 +1,3 @@
-A simple weather app using openweathermap api.
+# Weather App
+
+### A simple weather app using openweathermap api.
